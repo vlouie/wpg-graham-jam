@@ -8,6 +8,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="./base.css" rel="stylesheet">
+    <script>
+        setInterval(function(){
+            var dayMs = 1000*60*60*24;
+            var date = new Date('2018-06-15');
+            var today = new Date();
+            var dateMs = date.getTime();
+            var todayMs = today.getTime();
+            var diffMs = dateMs - todayMs;
+            var daysToGo = Math.round(diffMs/dayMs);
+
+            $('#countdown').text(daysToGo);
+        }, 1000)
+    </script>
   </head>
   <body>
     <div class="site-wrapper">
@@ -15,26 +28,30 @@
             <div class="cover-container">
                 <div class="masthead clearfix">
                 <div class="inner">
-                    <h3 class="masthead-brand">Cover</h3>
+                    <!-- <h3 class="masthead-brand">Victoria & Sterling</h3> -->
                     <nav class="nav nav-masthead">
                     <a class="nav-link active" href="#">Home</a>
-                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Reception</a>
+                    <a class="nav-link" href="#">Accommodations</a>
+                    <a class="nav-link" href="#">Registry</a>
                     <a class="nav-link" href="#">Contact</a>
                     </nav>
                 </div>
                 </div>
 
                 <div class="inner cover">
-                    <h1 class="cover-heading">Cover your page.</h1>
-                    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+                    <h1 class="cover-heading">Victoria & Sterling</h1>
+                    <p class="lead">June 15, 2018 • Winnipeg, MB</p>
                     <p class="lead">
-                        <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+                        <span id="countdown"></span><span> days to go!</span>
+                        <!--<a href="#" class="btn btn-lg btn-secondary">Learn more</a>-->
                     </p>
                 </div>
 
                 <div class="mastfoot">
                     <div class="inner">
-                        <p>Cover template for <a href="https://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+                        <p>Cover template for <a href="https://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.<br />
+                        Adapted and reworked by Victoria, hosted by Sterling <span id='heart'>♥</span></p>
                     </div>
                 </div>
             </div>
