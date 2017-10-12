@@ -47,7 +47,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #231f20;
+  background-color: #020202;
 }
 body {
   font-family: 'goldenbookosf_lightregular';
@@ -97,7 +97,7 @@ body {
   font-weight: bold;
   color: rgba(255,255,255,.5);
   background-color: transparent;
-  border-bottom: .25rem solid transparent;
+  border-bottom: .05rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
@@ -123,6 +123,81 @@ body {
   }
 }
 
+/*
+ * Glowies
+ */
+
+.glowies {
+  top: 10%;
+  width: 42rem;
+  height: 50rem;
+  position:absolute;
+}
+@keyframes twinkle {
+  0% {
+    height:1rem;
+    width:1rem;
+    box-shadow:0 0 50px gold,0 0 150px gold, inset 0 5px 5px 40px whitesmoke, inset 5px 0 35px 50px ivory;
+  }
+  50% {
+    height:0.7rem;
+    width:0.7rem;
+    box-shadow:0 0 50px silver,0 0 30px cornflowerblue, inset 0 10px 10px 20px #ddd, inset 30px 0 35px 50px #ccc;
+  }
+  100% {
+    height:1rem;
+    width:1rem;
+    box-shadow:0 0 50px gold,0 0 150px gold, inset 0 5px 5px 40px whitesmoke, inset 5px 0 35px 50px ivory;
+  }
+}
+
+.glowy {
+  height:1rem;
+  width:1rem;
+  border-radius:100%;
+  background :#ddd;
+  margin:auto;
+  box-shadow:0 0 50px gold,0 0 150px gold, inset 0 5px 5px 40px whitesmoke, inset 5px 0 35px 50px ivory;
+  animation-name: twinkle;
+  animation-iteration-count: infinite;
+}
+
+#glowy1 {
+  left: 10%;
+  top: 30%;
+  position:absolute;
+  animation-duration: 4s;
+}
+#glowy2 {
+  left: 30%;
+  top: 20%;
+  position:absolute;
+  animation-duration: 10s;
+}
+#glowy3 {
+  left: 79%;
+  top: 11%;
+  position:absolute;
+  animation-duration: 7s;
+}
+#glowy4 {
+  left: 70%;
+  top: 50%;
+  position:absolute;
+  animation-duration: 12s;
+}
+#glowy5 {
+  left: 85%;
+  top: 60%;
+  position:absolute;
+  animation-duration: 5s;
+}
+#glowy6 {
+  left: 40%;
+  top: 68%;
+  position:absolute;
+  animation-duration: 8s;
+}
 
 /*
  * Cover
