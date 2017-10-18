@@ -137,6 +137,58 @@ body {
   height: 50rem;
   position:absolute;
 }
+
+@-webkit-keyframes twinkle {
+  0% {
+    height:1rem;
+    width:1rem;
+    box-shadow:0 0 50px gold,0 0 150px gold, inset 0 5px 5px 40px whitesmoke, inset 5px 0 35px 50px ivory;
+  }
+  50% {
+    height:0.7rem;
+    width:0.7rem;
+    box-shadow:0 0 50px silver,0 0 30px cornflowerblue, inset 0 10px 10px 20px #ddd, inset 30px 0 35px 50px #ccc;
+  }
+  100% {
+    height:1rem;
+    width:1rem;
+    box-shadow:0 0 50px gold,0 0 150px gold, inset 0 5px 5px 40px whitesmoke, inset 5px 0 35px 50px ivory;
+  }
+}
+@-moz-keyframes twinkle {
+  0% {
+    height:1rem;
+    width:1rem;
+    box-shadow:0 0 50px gold,0 0 150px gold, inset 0 5px 5px 40px whitesmoke, inset 5px 0 35px 50px ivory;
+  }
+  50% {
+    height:0.7rem;
+    width:0.7rem;
+    box-shadow:0 0 50px silver,0 0 30px cornflowerblue, inset 0 10px 10px 20px #ddd, inset 30px 0 35px 50px #ccc;
+  }
+  100% {
+    height:1rem;
+    width:1rem;
+    box-shadow:0 0 50px gold,0 0 150px gold, inset 0 5px 5px 40px whitesmoke, inset 5px 0 35px 50px ivory;
+  }
+}
+@-o-keyframes twinkle {
+  0% {
+    height:1rem;
+    width:1rem;
+    box-shadow:0 0 50px gold,0 0 150px gold, inset 0 5px 5px 40px whitesmoke, inset 5px 0 35px 50px ivory;
+  }
+  50% {
+    height:0.7rem;
+    width:0.7rem;
+    box-shadow:0 0 50px silver,0 0 30px cornflowerblue, inset 0 10px 10px 20px #ddd, inset 30px 0 35px 50px #ccc;
+  }
+  100% {
+    height:1rem;
+    width:1rem;
+    box-shadow:0 0 50px gold,0 0 150px gold, inset 0 5px 5px 40px whitesmoke, inset 5px 0 35px 50px ivory;
+  }
+}
 @keyframes twinkle {
   0% {
     height:1rem;
@@ -155,6 +207,36 @@ body {
   }
 }
 
+@-webkit-keyframes shine {
+  0% {
+    height:0rem;
+    width:0rem;
+  }
+  100% {
+    height:0.05rem;
+    width:0.05rem;
+  }
+}
+@-moz-keyframes shine {
+  0% {
+    height:0rem;
+    width:0rem;
+  }
+  100% {
+    height:0.05rem;
+    width:0.05rem;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    height:0rem;
+    width:0rem;
+  }
+  100% {
+    height:0.05rem;
+    width:0.05rem;
+  }
+}
 @keyframes shine {
   0% {
     height:0rem;
@@ -165,15 +247,17 @@ body {
     width:0.05rem;
   }
 }
+
 .stars {
   border-radius:100%;
   background :#ddd;
   margin:auto;
   box-shadow:0 0 20px ivory,0 0 150px silver, inset 0 5px 5px 40px whitesmoke, inset 5px 0 35px 50px ivory;
   position:absolute;
-  animation-name: shine;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
+  animation: shine 5s forwards;
+  -webkit-animation: shine 5s forwards;
+  -moz-animation: shine 5s forwards;
+  -o-animation: shine 5s forwards;
 }
 .glowy {
   height:1rem;
@@ -182,8 +266,10 @@ body {
   background :#ddd;
   margin:auto;
   box-shadow:0 0 50px gold,0 0 150px gold, inset 0 5px 5px 40px whitesmoke, inset 5px 0 35px 50px ivory;
-  animation-name: twinkle;
-  animation-iteration-count: infinite;
+  animation: twinkle infinite;
+  -webkit-animation: twinkle infinite;
+  -moz-animation: twinkle infinite;
+  -o-animation: twinkle infinite;
 }
 
 #glowy1 {
@@ -191,36 +277,54 @@ body {
   top: 30%;
   position:absolute;
   animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -o-animation-duration: 4s;
 }
 #glowy2 {
   left: 30%;
   top: 20%;
   position:absolute;
   animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+  -moz-animation-duration: 10s;
+  -o-animation-duration: 10s;
 }
 #glowy3 {
   left: 79%;
   top: 11%;
   position:absolute;
   animation-duration: 7s;
+  -webkit-animation-duration: 7s;
+  -moz-animation-duration: 7s;
+  -o-animation-duration: 7s;
 }
 #glowy4 {
   left: 70%;
   top: 77%;
   position:absolute;
   animation-duration: 12s;
+  -webkit-animation-duration: 12s;
+  -moz-animation-duration: 12s;
+  -o-animation-duration: 12s;
 }
 #glowy5 {
   left: 85%;
   top: 60%;
   position:absolute;
   animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -o-animation-duration: 5s;
 }
 #glowy6 {
   left: 40%;
   top: 68%;
   position:absolute;
   animation-duration: 8s;
+  -webkit-animation-duration: 8s;
+  -moz-animation-duration: 8s;
+  -o-animation-duration: 8s;
 }
 
 /*
