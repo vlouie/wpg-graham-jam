@@ -8,39 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link href="./base.css" rel="stylesheet">
-    <script>
-        var numStars = 80;
-        var minPercent = 5;
-        var maxPercent = 95;
-
-        setTimeout(function(){
-            for (var i = 0; i < 100; i++){
-                var leftRand = Math.floor(Math.random() * (maxPercent - minPercent + 1)) + minPercent;
-                var topRand = Math.floor(Math.random() * (maxPercent - minPercent + 1)) + minPercent;
-                var appending = "<div class='stars' style='left:"+leftRand+"%;top:"+topRand+"%;'></div>";
-                $('.glowies').append($(appending));
-            }
-        }, 500);
-
-        setInterval(function(){
-            var dayMs = 1000*60*60*24;
-            var date = new Date('2018-06-15');
-            var today = new Date();
-            var dateMs = date.getTime();
-            var todayMs = today.getTime();
-            var diffMs = dateMs - todayMs;
-            var daysToGo = Math.round(diffMs/dayMs);
-
-            $('#countdown').text(daysToGo);
-        }, 1000);
-
-        var navHandler = function(section){
-            $('.nav-link').removeClass('active');
-            $('.cover').addClass('hidden');
-            $('#' + section).removeClass('hidden');
-            $('#nav-' + section).addClass('active');
-        }
-    </script>
+    <script src="./app.js"></script>
   </head>
   <body>
     <div class="site-wrapper">
