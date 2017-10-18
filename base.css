@@ -227,6 +227,9 @@ body {
  * Cover
  */
 
+.text-bg {
+   background: rgba(0,0,0,.8);
+}
 .cover {
   padding: 0 1.5rem;
   z-index: 10;
@@ -241,10 +244,15 @@ body {
 }
 .lead {
   font-family: 'annabelleregular';
+}
+.cover-text {
   font-size: 1.6rem;
 }
 .gold {
   color: #debb6e;
+}
+.hidden {
+  display: none;
 }
 
 /*
