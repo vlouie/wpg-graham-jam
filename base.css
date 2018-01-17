@@ -74,10 +74,19 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+.content {
+  font-size: 20px;
+  text-align: left;
+}
 
 /* Padding for spacing */
 .inner {
   padding: 2rem;
+}
+
+img.main {
+  float: left;
+  margin: 1em;
 }
 
 
