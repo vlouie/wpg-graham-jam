@@ -145,6 +145,8 @@ img.main {
   top: 10%;
   width: 42rem;
   height: 50rem;
+  /*height: 50rem;*/
+  height: 100%;
   position:absolute;
 }
 
@@ -376,6 +378,8 @@ img.main {
   padding: 0 1.5rem;
   z-index: 10;
   position: relative;
+  height: 400px;
+  overflow: scroll;
 }
 .cover-heading {
   font-size: 4rem;
