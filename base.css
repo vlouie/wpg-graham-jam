@@ -54,6 +54,7 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  font-size: 20px;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -79,6 +80,10 @@ body {
   text-align: left;
 }
 
+table > b {
+  color: #debb6e;
+}
+
 /* Padding for spacing */
 .inner {
   padding: 2rem;
@@ -87,6 +92,19 @@ body {
 img.main {
   float: left;
   margin: 1em;
+}
+
+table#hotels-table {
+  border: 1px solid #fff;
+}
+
+td {
+  padding: 1em;
+}
+
+hr {
+  background: #fff;
+  height: 1px;
 }
 
 
@@ -407,6 +425,7 @@ img.main {
 
 .mastfoot {
   color: rgba(255,255,255,.5);
+  font-size: 12px;
 }
 #heart {
   color: rgb(230, 173, 173);
